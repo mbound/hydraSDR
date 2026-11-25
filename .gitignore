@@ -1,0 +1,27 @@
+# CMake build trees
+build/
+build-*/
+cmake-build-*/
+CMakeUserPresets.json
+compile_commands.json
+
+# Local research notes, probes and build helpers.
+/research/
+
+# Captures written by hydra_rx
+*.cs16
+*.qi14
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Editors and OS files
+.claude/
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
+

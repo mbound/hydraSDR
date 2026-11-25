@@ -1,0 +1,47 @@
+HydraSDR third-party notices and provenance
+===========================================
+
+BirriaSDR
+---------
+HydraSDR is derived from BirriaSDR by Luigi C. and contributors. BirriaSDR's
+MT7921 user-space SDR architecture, USB transport, receiver API, firmware and
+related source provided the principal upstream foundation for this project.
+
+The original BirriaSDR MIT copyright and permission notice is preserved
+verbatim in LICENSES/BirriaSDR-MIT.txt. Individual inherited source files also
+retain applicable upstream copyright/SPDX headers.
+
+Upstream project:
+https://github.com/luigifcruz/BirriaSDR
+
+The exact-payload RX DMA framing correction includes work adapted from
+BirriaSDR commit e9ea0e8a60f193e46eea60843869cc6508842682 by Yury MonZon,
+under the same MIT license.
+
+OpenWrt mt76
+------------
+src/usb.c and src/chips/mt7921_boot.c adapt portions of the BSD-3-Clause-Clear
+user-space MT76 transport. The retained license text is in
+LICENSES/BSD-3-Clause-Clear.txt.
+
+Source lineage:
+https://github.com/openwrt/mt76/tree/c5a3bd91aa735b669618610d5f0ebfa5786845a6
+
+Other research references
+-------------------------
+The high-level SDR API was informed by librtlsdr; no librtlsdr implementation
+is incorporated.
+
+The PHY gain-register layout was initially a research lead from w1700k-sdr and
+was subsequently checked against the MT7961 target ROM and hardware. Its
+calibration tables are not redistributed.
+
+Mtk79ICAP was used as a comparative research source. No proprietary patch bytes
+or vendor firmware from it are redistributed.
+
+Dependencies and excluded artifacts
+-----------------------------------
+libusb is a separate LGPL-2.1-or-later dependency. HydraSDR does not embed
+libusb, NumPy or Python, and the standalone release does not include vendor ROM
+dumps, private vendor RAM/patch firmware, or private reverse-engineering
+artifacts. No nonvolatile programming is implemented by the project.

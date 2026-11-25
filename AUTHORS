@@ -1,0 +1,15 @@
+HydraSDR
+========
+
+HydraSDR is maintained by its downstream contributors in the mbound research
+workspace. The project is derived from BirriaSDR and retains the original
+copyright and license notices on inherited source files.
+
+Primary upstream credit
+-----------------------
+
+BirriaSDR was created by Luigi C. and contributors. Its user-space MT7921 SDR
+architecture, USB transport, receiver API and firmware work form the foundation
+on which HydraSDR was developed.
+
+Additional third-party attribution is recorded in NOTICE and LICENSES/.
