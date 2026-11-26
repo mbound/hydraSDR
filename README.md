@@ -1,11 +1,13 @@
 # HydraSDR
 
 <p align="center">
-  <img src="assets/hydrasdr-logo.svg" alt="HydraSDR logo" width="380">
+  <img src="assets/hydrasdr-logo.png" alt="HydraSDR logo" width="360">
 </p>
 
 HydraSDR turns supported MediaTek Wi-Fi hardware into a multi-RX / multi-TX SDR platform.
 The current backend targets the MT7921AUN / MT7961 architecture family with MT7972 RF.
+
+> **Note:** HydraSDR is experimental software.
 
 ## Features
 
@@ -93,7 +95,6 @@ SOAPY_SDR_PLUGIN_PATH=$PWD/build/soapy SoapySDRUtil --find=driver=hydra
 
 The public C API is in `include/hydrasdr.h`. Experimental TX controls are in `include/hydra_tx_control.h`.
 
-> **Note:** HydraSDR is experimental software.
 
 ## Credits
 
